@@ -10,105 +10,107 @@ using System.Collections;
 using static System.Console;
 using System.Collections.Generic;
 
-//namespace GeladeiraIOT
-//{
-class Program
+namespace GeladeiraIOT
 {
-    public static void Main()
+    class Program
     {
-        // Definição do itens guardados na geladeira
-        string[] hortifruti = { "Acelga", "Alface", "Batata", "Beterraba", "Cenoura", "Couve", "Pepino", "Tomate" };
-        string[] laticiniosEnlatados = { "Atum em lata", "Leite", "Queijo", "Manteiga", "Requeijão", "Creme de leite", "Milho em conserva", "Ervilha em conserva" };
-        string[] carnesCharcutariaOvos = { "Carne Moída", "Frango", "Carne bovina", "Ovos", "Salame", "Bacon", "Linguiça", "Peito de Peru" };
-
-        // Criação do objeto geladeira com 3 prateleiras
-        Geladeira Geladeira = new Geladeira();
-        Geladeira.AdicionarItens(0, hortifruti);
-        Geladeira.AdicionarItens(1, laticiniosEnlatados);
-        Geladeira.AdicionarItens(2, carnesCharcutariaOvos);
-
-        // Imprimindo os itens da geladeira
-        Geladeira.ImprimirItens();
-    }
-}
-public class Geladeira
-{
-    private Prateleira[] prateleiras;
-
-    public Geladeira()
-    {
-        prateleiras = new Prateleira[3];
-        for (int i = 0; i < prateleiras.Length; i++)
+        public static void Main()
         {
-            prateleiras[i] = new Prateleira();
+            // Definição do itens guardados na geladeira
+            string[] hortifruti = { "Acelga", "Alface", "Batata", "Beterraba", "Cenoura", "Couve", "Pepino", "Tomate" };
+            string[] laticiniosEnlatados = { "Atum em lata", "Leite", "Queijo", "Manteiga", "Requeijão", "Creme de leite", "Milho em conserva", "Ervilha em conserva" };
+            string[] carnesCharcutariaOvos = { "Carne Moída", "Frango", "Carne bovina", "Ovos", "Salame", "Bacon", "Linguiça", "Peito de Peru" };
+
+            // Criação do objeto geladeira com 3 prateleiras
+            Geladeira geladeira = new Geladeira();
+            geladeira.AdicionarItens(0, hortifruti);
+            geladeira.AdicionarItens(1, laticiniosEnlatados);
+            geladeira.AdicionarItens(2, carnesCharcutariaOvos);
+
+            // Imprimindo os itens da geladeira
+            geladeira.ImprimirItens();
         }
     }
 
-    public void AdicionarItens(int numeroPrateleira, string[] itens)
+    public class Geladeira
     {
-        prateleiras[numeroPrateleira].AdicionarItens(itens);
-    }
+        private Prateleira[] prateleiras;
 
-    public void ImprimirItens()
-    {
-        for (int i = 0; i < prateleiras.Length; i++)
+        public Geladeira()
         {
-            WriteLine($"Prateleira {i}:");
-            prateleiras[i].ImprimirItens(i);
-            WriteLine();
-        }
-    }
-}
-
-public class Prateleira
-{
-    private Container[] containers;
-    public Prateleira()
-    {
-        containers = new Container[2];
-        for (int i = 0; i < containers.Length; i++)
-        {
-            containers[i] = new Container();
-        }
-    }
-
-    public void AdicionarItens(string[] itens)
-    {
-        int itemIndex = 0;
-
-        for (int i = 0; i < containers.Length; i++)
-        {
-            for (int j = 0; j < containers[i].Posicoes.Length; j++)
+            prateleiras = new Prateleira[3];
+            for (int i = 0; i < prateleiras.Length; i++)
             {
-                if (itemIndex < itens.Length)
+                prateleiras[i] = new Prateleira();
+            }
+        }
+
+        public void AdicionarItens(int numeroPrateleira, string[] itens)
+        {
+            prateleiras[numeroPrateleira].AdicionarItens(itens);
+        }
+
+        public void ImprimirItens()
+        {
+            for (int i = 0; i < prateleiras.Length; i++)
+            {
+                WriteLine($"Prateleira {i}:");
+                prateleiras[i].ImprimirItens(i);
+                WriteLine();
+            }
+        }
+    }
+
+    public class Prateleira
+    {
+        private Container[] containers;
+
+        public Prateleira()
+        {
+            containers = new Container[2];
+            for (int i = 0; i < containers.Length; i++)
+            {
+                containers[i] = new Container();
+            }
+        }
+
+        public void AdicionarItens(string[] itens)
+        {
+            int itemIndex = 0;
+
+            for (int i = 0; i < containers.Length; i++)
+            {
+                for (int j = 0; j < containers[i].Posicoes.Length; j++)
                 {
-                    containers[i].Posicoes[j] = itens[itemIndex];
-                    itemIndex++;
+                    if (itemIndex < itens.Length)
+                    {
+                        containers[i].Posicoes[j] = itens[itemIndex];
+                        itemIndex++;
+                    }
+                }
+            }
+        }
+
+        public void ImprimirItens(int numeroPrateleira)
+        {
+            for (int i = 0; i < containers.Length; i++)
+            {
+                WriteLine($"  Container {i}:");
+                for (int j = 0; j < containers[i].Posicoes.Length; j++)
+                {
+                    WriteLine($"    Posição {j}: {containers[i].Posicoes[j]}");
                 }
             }
         }
     }
 
-    public void ImprimirItens(int numeroPrateleira)
+    public class Container
     {
-        for (int i = 0; i < containers.Length; i++)
+        public string[] Posicoes { get; private set; }
+
+        public Container()
         {
-            WriteLine($"  Container {i}:");
-            for (int j = 0; j < containers[i].Posicoes.Length; j++)
-            {
-                WriteLine($"    Posição {j}: {containers[i].Posicoes[j]}");
-            }
+            Posicoes = new string[4];
         }
     }
 }
-
-public class Container
-{
-    public string[] Posicoes { get; private set; }
-
-    public Container()
-    {
-        Posicoes = new string[4];
-    }
-}
-//}
