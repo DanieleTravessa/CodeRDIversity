@@ -1,0 +1,15 @@
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\bin\Debug\net8.0\novoprojeto.exe
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\bin\Debug\net8.0\novoprojeto.deps.json
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\bin\Debug\net8.0\novoprojeto.runtimeconfig.json
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\bin\Debug\net8.0\novoprojeto.dll
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\bin\Debug\net8.0\novoprojeto.pdb
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\obj\Debug\net8.0\novoprojeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\obj\Debug\net8.0\novoprojeto.AssemblyInfoInputs.cache
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\obj\Debug\net8.0\novoprojeto.AssemblyInfo.cs
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\obj\Debug\net8.0\novoprojeto.csproj.CoreCompileInputs.cache
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\obj\Debug\net8.0\novoprojeto.sourcelink.json
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\obj\Debug\net8.0\novoprojeto.dll
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\obj\Debug\net8.0\refint\novoprojeto.dll
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\obj\Debug\net8.0\novoprojeto.pdb
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\obj\Debug\net8.0\novoprojeto.genruntimeconfig.cache
+C:\InstanciasVisualStudio\CoderDiversity\segundodesafio\obj\Debug\net8.0\ref\novoprojeto.dll

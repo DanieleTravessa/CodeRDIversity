@@ -1,0 +1,15 @@
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\bin\Debug\net8.0\SegundoDesafio.exe
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\bin\Debug\net8.0\SegundoDesafio.deps.json
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\bin\Debug\net8.0\SegundoDesafio.runtimeconfig.json
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\bin\Debug\net8.0\SegundoDesafio.dll
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\bin\Debug\net8.0\SegundoDesafio.pdb
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\obj\Debug\net8.0\SegundoDesafio.GeneratedMSBuildEditorConfig.editorconfig
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\obj\Debug\net8.0\SegundoDesafio.AssemblyInfoInputs.cache
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\obj\Debug\net8.0\SegundoDesafio.AssemblyInfo.cs
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\obj\Debug\net8.0\SegundoDesafio.csproj.CoreCompileInputs.cache
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\obj\Debug\net8.0\SegundoDesafio.sourcelink.json
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\obj\Debug\net8.0\SegundoDesafio.dll
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\obj\Debug\net8.0\refint\SegundoDesafio.dll
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\obj\Debug\net8.0\SegundoDesafio.pdb
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\obj\Debug\net8.0\SegundoDesafio.genruntimeconfig.cache
+C:\instanciasvisualstudio\coderdiversity\2segundodesafio\obj\Debug\net8.0\ref\SegundoDesafio.dll

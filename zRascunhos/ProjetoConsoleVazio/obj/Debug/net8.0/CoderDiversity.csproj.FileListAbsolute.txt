@@ -1,0 +1,15 @@
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\obj\Debug\net8.0\CoderDiversity.GeneratedMSBuildEditorConfig.editorconfig
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\obj\Debug\net8.0\CoderDiversity.AssemblyInfoInputs.cache
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\obj\Debug\net8.0\CoderDiversity.AssemblyInfo.cs
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\obj\Debug\net8.0\CoderDiversity.csproj.CoreCompileInputs.cache
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\obj\Debug\net8.0\CoderDiversity.sourcelink.json
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\bin\Debug\net8.0\CoderDiversity.exe
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\bin\Debug\net8.0\CoderDiversity.deps.json
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\bin\Debug\net8.0\CoderDiversity.runtimeconfig.json
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\bin\Debug\net8.0\CoderDiversity.dll
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\bin\Debug\net8.0\CoderDiversity.pdb
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\obj\Debug\net8.0\CoderDiversity.dll
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\obj\Debug\net8.0\refint\CoderDiversity.dll
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\obj\Debug\net8.0\CoderDiversity.pdb
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\obj\Debug\net8.0\CoderDiversity.genruntimeconfig.cache
+C:\InstanciasVisualStudio\CoderDiversity\zrascunhos\projetoconsolevazio\obj\Debug\net8.0\ref\CoderDiversity.dll

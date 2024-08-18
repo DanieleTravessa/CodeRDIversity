@@ -1,0 +1,15 @@
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\bin\Debug\net8.0\DesafioGeladeiraIOT.exe
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\bin\Debug\net8.0\DesafioGeladeiraIOT.deps.json
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\bin\Debug\net8.0\DesafioGeladeiraIOT.runtimeconfig.json
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\bin\Debug\net8.0\DesafioGeladeiraIOT.dll
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\bin\Debug\net8.0\DesafioGeladeiraIOT.pdb
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\obj\Debug\net8.0\DesafioGeladeiraIOT.GeneratedMSBuildEditorConfig.editorconfig
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\obj\Debug\net8.0\DesafioGeladeiraIOT.AssemblyInfoInputs.cache
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\obj\Debug\net8.0\DesafioGeladeiraIOT.AssemblyInfo.cs
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\obj\Debug\net8.0\DesafioGeladeiraIOT.csproj.CoreCompileInputs.cache
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\obj\Debug\net8.0\DesafioGeladeiraIOT.sourcelink.json
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\obj\Debug\net8.0\DesafioGeladeiraIOT.dll
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\obj\Debug\net8.0\refint\DesafioGeladeiraIOT.dll
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\obj\Debug\net8.0\DesafioGeladeiraIOT.pdb
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\obj\Debug\net8.0\DesafioGeladeiraIOT.genruntimeconfig.cache
+C:\InstanciasVisualStudio\CoderDiversity\PrimeiroDesafio\DesafioGeladeiraIOT\obj\Debug\net8.0\ref\DesafioGeladeiraIOT.dll

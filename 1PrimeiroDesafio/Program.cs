@@ -1,4 +1,4 @@
-/*
+﻿/*
 Atividade relacionada a primeira semana do Programa CoderDiversity;
 Alunas: 
  Daniele Travessa Brito
@@ -10,28 +10,27 @@ using System.Collections;
 using static System.Console;
 using System.Collections.Generic;
 
-namespace GeladeiraIOT
+namespace Geladeiraiot
 {
     class Program
     {
         public static void Main()
         {
-            // Definição do itens guardados na geladeira
+        // Definição do itens guardados na geladeira
             string[] hortifruti = { "Acelga", "Alface", "Batata", "Beterraba", "Cenoura", "Couve", "Pepino", "Tomate" };
             string[] laticiniosEnlatados = { "Atum em lata", "Leite", "Queijo", "Manteiga", "Requeijão", "Creme de leite", "Milho em conserva", "Ervilha em conserva" };
             string[] carnesCharcutariaOvos = { "Carne Moída", "Frango", "Carne bovina", "Ovos", "Salame", "Bacon", "Linguiça", "Peito de Peru" };
 
-            // Criação do objeto geladeira com 3 prateleiras
-            Geladeira geladeira = new Geladeira();
-            geladeira.AdicionarItens(0, hortifruti);
-            geladeira.AdicionarItens(1, laticiniosEnlatados);
-            geladeira.AdicionarItens(2, carnesCharcutariaOvos);
+        // Criação do objeto geladeira com 3 prateleiras
+            Geladeira Geladeira = new Geladeira();
+            Geladeira.AdicionarItens(0, hortifruti);
+            Geladeira.AdicionarItens(1, laticiniosEnlatados);
+            Geladeira.AdicionarItens(2, carnesCharcutariaOvos);
 
-            // Imprimindo os itens da geladeira
-            geladeira.ImprimirItens();
+        // Imprimindo os itens da geladeira
+            Geladeira.ImprimirItens();
         }
     }
-
     public class Geladeira
     {
         private Prateleira[] prateleiras;
@@ -64,7 +63,6 @@ namespace GeladeiraIOT
     public class Prateleira
     {
         private Container[] containers;
-
         public Prateleira()
         {
             containers = new Container[2];
