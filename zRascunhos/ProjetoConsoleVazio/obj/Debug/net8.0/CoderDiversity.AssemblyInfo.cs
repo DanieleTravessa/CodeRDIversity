@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CoderDiversity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80d0a854f166a2b9c6be528a4b80a00e9305de80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69f3dd28086afbdbfbaff9fa165fc4f07f3233a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CoderDiversity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CoderDiversity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

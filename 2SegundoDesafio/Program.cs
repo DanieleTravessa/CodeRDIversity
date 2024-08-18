@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+/*Desafio da 2ª semana.
+Aluna: Daniele Travessa Brito*/ 
 
 namespace Geladeiraiot
 {
@@ -7,26 +9,103 @@ namespace Geladeiraiot
     {
         public static void Main()
         {
-            // Definição dos itens guardados na geladeira
-            string[] hortifruti = { "Acelga", "Alface", "Batata", "Beterraba", "Cenoura", "Couve", "Pepino", "Tomate" };
-            string[] laticiniosEnlatados = { "Atum em lata", "Leite", "Queijo", "Manteiga", "Requeijão", "Creme de leite", "Milho em conserva", "Ervilha em conserva" };
-            string[] carnesCharcutariaOvos = { "Carne Moída", "Frango", "Carne bovina", "Ovos", "Salame", "Bacon", "Linguiça", "Peito de Peru" };
+            try
+            {
+                // Definição dos itens guardados na geladeira
+                string[] hortifruti = { "Acelga", "Alface", "Batata", "Beterraba", "Cenoura", "Couve", "Pepino", "Tomate" };
+                string[] laticiniosEnlatados = { "Atum em lata", "Leite", "Queijo", "Manteiga", "Requeijão", "Creme de leite", "Milho em conserva", "Ervilha em conserva" };
+                string[] carnesCharcutariaOvos = { "Carne Moída", "Frango", "Carne bovina", "Ovos", "Salame", "Bacon", "Linguiça", "Peito de Peru" };
 
-            // Criação do objeto geladeira com 3 prateleiras
-            Geladeira geladeira = new Geladeira();
-            geladeira.AdicionarItens(0, hortifruti);
-            geladeira.AdicionarItens(1, laticiniosEnlatados);
-            geladeira.AdicionarItens(2, carnesCharcutariaOvos);
+                // Criação do objeto geladeira com 3 prateleiras
+                Geladeira geladeira = new Geladeira();
+                geladeira.AdicionarItens(0, hortifruti);
+                geladeira.AdicionarItens(1, laticiniosEnlatados);
+                geladeira.AdicionarItens(2, carnesCharcutariaOvos);
 
-            // Testando as novas funcionalidades
-            geladeira.RemoverItemDePosicao(0, 0, 0); // Remove item da prateleira 0, container 0, posição 0
-            geladeira.AdicionarItemEmPosicao(0, 0, 0, "Maçã"); // Adiciona item na prateleira 0, container 0, posição 0
-            geladeira.AdicionarItemEmPosicao(0, 0, 0, "Laranja"); // Tenta adicionar em posição ocupada
-            geladeira.RemoverItensDeContainer(1, 0); // Remove todos os itens do container 0 da prateleira 1
-            geladeira.AdicionarItensEmContainer(1, 0, new string[] { "Iogurte", "Manteiga" }); // Adiciona itens no container 0 da prateleira 1
+                while (true)
+                {
+                    Console.WriteLine("Escolha uma ação:");
+                    Console.WriteLine("1. Adicionar item em uma posição específica");
+                    Console.WriteLine("2. Remover item de uma posição específica");
+                    Console.WriteLine("3. Imprimir conteúdo da geladeira");
+                    Console.WriteLine("4. Sair");
 
-            // Imprimindo os itens da geladeira
-            geladeira.ImprimirItens();
+                    string escolha = Console.ReadLine();
+
+                    switch (escolha)
+                    {
+                        case "1":
+                            AdicionarItem(geladeira);
+                            break;
+                        case "2":
+                            RemoverItem(geladeira);
+                            break;
+                        case "3":
+                            geladeira.ImprimirItens();
+                            break;
+                        case "4":
+                            return;
+                        default:
+                            Console.WriteLine("Opção inválida. Tente novamente.");
+                            break;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ocorreu um erro: {ex.Message}");
+            }
+        }
+
+        static void AdicionarItem(Geladeira geladeira)
+        {
+            try
+            {
+                Console.WriteLine("Indique o número da prateleira:");
+                Console.WriteLine("0 - Hortifruti");
+                Console.WriteLine("1 - Laticínios");
+                Console.WriteLine("2 - Carnes, Charcutaria, Ovos");
+                int prateleira = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Em qual container (0, 1)?");
+                int container = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Em qual posição (0, 1, 2, 3)?");
+                int posicao = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Informe o item:");
+                string item = Console.ReadLine();
+
+                geladeira.AdicionarItemEmPosicao(prateleira, container, posicao, item);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao adicionar item: {ex.Message}");
+            }
+        }
+
+        static void RemoverItem(Geladeira geladeira)
+        {
+            try
+            {
+                Console.WriteLine("Indique o número da prateleira:");
+                Console.WriteLine("0 - Hortifruti");
+                Console.WriteLine("1 - Laticínios");
+                Console.WriteLine("2 - Carnes, Charcutaria, Ovos");
+                int prateleira = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Em qual container (0, 1)?");
+                int container = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Em qual posição (0, 1, 2, 3)?");
+                int posicao = int.Parse(Console.ReadLine());
+
+                geladeira.RemoverItemDePosicao(prateleira, container, posicao);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao remover item: {ex.Message}");
+            }
         }
     }
 
@@ -36,152 +115,174 @@ namespace Geladeiraiot
 
         public Geladeira()
         {
-            prateleiras = new Prateleira[3];
-            for (int i = 0; i < prateleiras.Length; i++)
+            try
             {
-                prateleiras[i] = new Prateleira();
+                prateleiras = new Prateleira[3];
+                for (int i = 0; i < prateleiras.Length; i++)
+                {
+                    prateleiras[i] = new Prateleira();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao inicializar a geladeira: {ex.Message}");
             }
         }
 
         public void AdicionarItens(int numeroPrateleira, string[] itens)
         {
-            prateleiras[numeroPrateleira].AdicionarItens(itens);
+            try
+            {
+                prateleiras[numeroPrateleira].AdicionarItens(itens);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao adicionar itens na prateleira {numeroPrateleira}: {ex.Message}");
+            }
         }
 
         public void ImprimirItens()
         {
-            for (int i = 0; i < prateleiras.Length; i++)
+            try
             {
-                Console.WriteLine($"Prateleira {i}:");
-                prateleiras[i].ImprimirItens(i);
-                Console.WriteLine();
+                for (int i = 0; i < prateleiras.Length; i++)
+                {
+                    Console.WriteLine($"Prateleira {i}:");
+                    prateleiras[i].ImprimirItens(i);
+                    Console.WriteLine();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao imprimir os itens: {ex.Message}");
             }
         }
 
-        // Função para remover item de uma posição específica
         public void RemoverItemDePosicao(int numeroPrateleira, int numeroContainer, int numeroPosicao)
         {
-            prateleiras[numeroPrateleira].RemoverItemDePosicao(numeroContainer, numeroPosicao);
+            try
+            {
+                prateleiras[numeroPrateleira].RemoverItemDePosicao(numeroContainer, numeroPosicao);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao remover item da posição {numeroPosicao} no container {numeroContainer} da prateleira {numeroPrateleira}: {ex.Message}");
+            }
         }
 
-        // Função para adicionar item em uma posição específica
         public void AdicionarItemEmPosicao(int numeroPrateleira, int numeroContainer, int numeroPosicao, string item)
         {
-            prateleiras[numeroPrateleira].AdicionarItemEmPosicao(numeroContainer, numeroPosicao, item);
-        }
-
-        // Função para remover todos os itens de um container
-        public void RemoverItensDeContainer(int numeroPrateleira, int numeroContainer)
-        {
-            prateleiras[numeroPrateleira].RemoverItensDeContainer(numeroContainer);
-        }
-
-        // Função para adicionar itens em um container
-        public void AdicionarItensEmContainer(int numeroPrateleira, int numeroContainer, string[] itens)
-        {
-            prateleiras[numeroPrateleira].AdicionarItensEmContainer(numeroContainer, itens);
+            try
+            {
+                prateleiras[numeroPrateleira].AdicionarItemEmPosicao(numeroContainer, numeroPosicao, item);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao adicionar item na posição {numeroPosicao} no container {numeroContainer} da prateleira {numeroPrateleira}: {ex.Message}");
+            }
         }
     }
 
     public class Prateleira
     {
         private Container[] containers;
+
         public Prateleira()
         {
-            containers = new Container[2];
-            for (int i = 0; i < containers.Length; i++)
+            try
             {
-                containers[i] = new Container();
+                containers = new Container[2];
+                for (int i = 0; i < containers.Length; i++)
+                {
+                    containers[i] = new Container();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao inicializar a prateleira: {ex.Message}");
             }
         }
 
         public void AdicionarItens(string[] itens)
         {
-            int itemIndex = 0;
-
-            for (int i = 0; i < containers.Length; i++)
+            try
             {
-                for (int j = 0; j < containers[i].Posicoes.Length; j++)
+                int itemIndex = 0;
+
+                for (int i = 0; i < containers.Length; i++)
                 {
-                    if (itemIndex < itens.Length)
+                    for (int j = 0; j < containers[i].Posicoes.Length; j++)
                     {
-                        containers[i].Posicoes[j] = itens[itemIndex];
-                        itemIndex++;
+                        if (itemIndex < itens.Length)
+                        {
+                            containers[i].Posicoes[j] = itens[itemIndex];
+                            itemIndex++;
+                        }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao adicionar itens na prateleira: {ex.Message}");
             }
         }
 
         public void ImprimirItens(int numeroPrateleira)
         {
-            for (int i = 0; i < containers.Length; i++)
+            try
             {
-                Console.WriteLine($"  Container {i}:");
-                for (int j = 0; j < containers[i].Posicoes.Length; j++)
+                for (int i = 0; i < containers.Length; i++)
                 {
-                    Console.WriteLine($"    Posição {j}: {containers[i].Posicoes[j]}");
+                    Console.WriteLine($"  Container {i}:");
+                    for (int j = 0; j < containers[i].Posicoes.Length; j++)
+                    {
+                        Console.WriteLine($"    Posição {j}: {containers[i].Posicoes[j] ?? "Vazia"}");
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao imprimir itens da prateleira {numeroPrateleira}: {ex.Message}");
             }
         }
 
-        // Função para remover item de uma posição específica
         public void RemoverItemDePosicao(int numeroContainer, int numeroPosicao)
         {
-            if (containers[numeroContainer].Posicoes[numeroPosicao] != null)
+            try
             {
-                containers[numeroContainer].Posicoes[numeroPosicao] = null;
-                Console.WriteLine($"Item removido da posição {numeroPosicao} no container {numeroContainer}.");
+                if (containers[numeroContainer].Posicoes[numeroPosicao] != null)
+                {
+                    containers[numeroContainer].Posicoes[numeroPosicao] = null;
+                    Console.WriteLine($"Item removido da posição {numeroPosicao} no container {numeroContainer}.");
+                }
+                else
+                {
+                    Console.WriteLine($"Posição {numeroPosicao} no container {numeroContainer} já está vazia.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine($"Posição {numeroPosicao} no container {numeroContainer} já está vazia.");
+                Console.WriteLine($"Erro ao remover item da posição {numeroPosicao} no container {numeroContainer}: {ex.Message}");
             }
         }
 
-        // Função para adicionar item em uma posição específica
         public void AdicionarItemEmPosicao(int numeroContainer, int numeroPosicao, string item)
         {
-            if (containers[numeroContainer].Posicoes[numeroPosicao] == null)
+            try
             {
-                containers[numeroContainer].Posicoes[numeroPosicao] = item;
-                Console.WriteLine($"Item '{item}' adicionado na posição {numeroPosicao} no container {numeroContainer}.");
-            }
-            else
-            {
-                Console.WriteLine($"Posição {numeroPosicao} no container {numeroContainer} já está ocupada.");
-            }
-        }
-
-        // Função para remover todos os itens de um container
-        public void RemoverItensDeContainer(int numeroContainer)
-        {
-            for (int i = 0; i < containers[numeroContainer].Posicoes.Length; i++)
-            {
-                containers[numeroContainer].Posicoes[i] = null;
-            }
-            Console.WriteLine($"Todos os itens foram removidos do container {numeroContainer}.");
-        }
-
-        // Função para adicionar itens em um container
-        public void AdicionarItensEmContainer(int numeroContainer, string[] itens)
-        {
-            int itemIndex = 0;
-
-            for (int i = 0; i < containers[numeroContainer].Posicoes.Length; i++)
-            {
-                if (containers[numeroContainer].Posicoes[i] == null && itemIndex < itens.Length)
+                if (containers[numeroContainer].Posicoes[numeroPosicao] == null)
                 {
-                    containers[numeroContainer].Posicoes[i] = itens[itemIndex];
-                    itemIndex++;
+                    containers[numeroContainer].Posicoes[numeroPosicao] = item;
+                    Console.WriteLine($"Item '{item}' adicionado na posição {numeroPosicao} no container {numeroContainer}.");
                 }
-                else if (containers[numeroContainer].Posicoes[i] != null)
+                else
                 {
-                    Console.WriteLine($"Posição {i} no container {numeroContainer} já está ocupada.");
+                    Console.WriteLine($"Posição {numeroPosicao} no container {numeroContainer} já está ocupada.");
                 }
             }
-            if (itemIndex < itens.Length)
+            catch (Exception ex)
             {
-                Console.WriteLine($"Não foi possível adicionar todos os itens ao container {numeroContainer}.");
+                Console.WriteLine($"Erro ao adicionar item na posição {numeroPosicao} no container {numeroContainer}: {ex.Message}");
             }
         }
     }
@@ -192,7 +293,14 @@ namespace Geladeiraiot
 
         public Container()
         {
-            Posicoes = new string[4];
+            try
+            {
+                Posicoes = new string[4];
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao inicializar o container: {ex.Message}");
+            }
         }
     }
 }

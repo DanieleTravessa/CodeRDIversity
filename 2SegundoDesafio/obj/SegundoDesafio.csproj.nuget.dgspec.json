@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\instanciasvisualstudio\\coderdiversity\\2segundodesafio\\SegundoDesafio.csproj": {}
+    "C:\\InstanciasVisualStudio\\CoderDiversity\\2SegundoDesafio\\SegundoDesafio.csproj": {}
   },
   "projects": {
-    "C:\\instanciasvisualstudio\\coderdiversity\\2segundodesafio\\SegundoDesafio.csproj": {
+    "C:\\InstanciasVisualStudio\\CoderDiversity\\2SegundoDesafio\\SegundoDesafio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\instanciasvisualstudio\\coderdiversity\\2segundodesafio\\SegundoDesafio.csproj",
+        "projectUniqueName": "C:\\InstanciasVisualStudio\\CoderDiversity\\2SegundoDesafio\\SegundoDesafio.csproj",
         "projectName": "SegundoDesafio",
-        "projectPath": "C:\\instanciasvisualstudio\\coderdiversity\\2segundodesafio\\SegundoDesafio.csproj",
+        "projectPath": "C:\\InstanciasVisualStudio\\CoderDiversity\\2SegundoDesafio\\SegundoDesafio.csproj",
         "packagesPath": "C:\\Users\\Daniele\\.nuget\\packages\\",
-        "outputPath": "C:\\instanciasvisualstudio\\coderdiversity\\2segundodesafio\\obj\\",
+        "outputPath": "C:\\InstanciasVisualStudio\\CoderDiversity\\2SegundoDesafio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
