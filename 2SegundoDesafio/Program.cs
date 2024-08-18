@@ -27,8 +27,9 @@ namespace Geladeiraiot
                     Console.WriteLine("Escolha uma ação:");
                     Console.WriteLine("1. Adicionar item em uma posição específica");
                     Console.WriteLine("2. Remover item de uma posição específica");
-                    Console.WriteLine("3. Imprimir conteúdo da geladeira");
-                    Console.WriteLine("4. Sair");
+                    Console.WriteLine("3. Remover todos os itens de um container");
+                    Console.WriteLine("4. Imprimir conteúdo da geladeira");
+                    Console.WriteLine("5. Sair");
 
                     string escolha = Console.ReadLine();
 
@@ -41,9 +42,12 @@ namespace Geladeiraiot
                             RemoverItem(geladeira);
                             break;
                         case "3":
+                            RemoverItensDeContainer(geladeira);       
+                            break;
+                        case "4":                         
                             geladeira.ImprimirItens();
                             break;
-                        case "4":
+                        case "5":
                             return;
                         default:
                             Console.WriteLine("Opção inválida. Tente novamente.");
@@ -107,6 +111,27 @@ namespace Geladeiraiot
                 Console.WriteLine($"Erro ao remover item: {ex.Message}");
             }
         }
+        static void RemoverItensDeContainer(Geladeira geladeira)
+{
+    try
+    {
+        Console.WriteLine("Indique o número da prateleira:");
+        Console.WriteLine("0 - Hortifruti");
+        Console.WriteLine("1 - Laticínios");
+        Console.WriteLine("2 - Carnes, Charcutaria, Ovos");
+        int prateleira = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Qual container (0, 1)?");
+        int container = int.Parse(Console.ReadLine());
+
+        geladeira.RemoverItensDeContainer(prateleira, container);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Erro ao remover itens do container: {ex.Message}");
+    }
+}
+
     }
 
     public class Geladeira
@@ -145,9 +170,11 @@ namespace Geladeiraiot
         {
             try
             {
+                string[] nomesPrateleiras = { "Hortifruti", "Laticínios", "Carnes, Charcutaria, Ovos" };
+                
                 for (int i = 0; i < prateleiras.Length; i++)
                 {
-                    Console.WriteLine($"Prateleira {i}:");
+                    Console.WriteLine($"Prateleira {i} - {nomesPrateleiras[i]}:");
                     prateleiras[i].ImprimirItens(i);
                     Console.WriteLine();
                 }
@@ -181,8 +208,20 @@ namespace Geladeiraiot
                 Console.WriteLine($"Erro ao adicionar item na posição {numeroPosicao} no container {numeroContainer} da prateleira {numeroPrateleira}: {ex.Message}");
             }
         }
-    }
+           public void RemoverItensDeContainer(int numeroPrateleira, int numeroContainer)
+        {
+            try
+            {
+                prateleiras[numeroPrateleira].RemoverItensDeContainer(numeroContainer);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao remover itens do container {numeroContainer}: {ex.Message}");
+            }
+        }
 
+    }          
+    
     public class Prateleira
     {
         private Container[] containers;
@@ -283,6 +322,22 @@ namespace Geladeiraiot
             catch (Exception ex)
             {
                 Console.WriteLine($"Erro ao adicionar item na posição {numeroPosicao} no container {numeroContainer}: {ex.Message}");
+            }
+        }
+
+        public void RemoverItensDeContainer(int numeroContainer)
+        {
+            try
+            {
+                for (int i = 0; i < containers[numeroContainer].Posicoes.Length; i++)
+                {
+                    containers[numeroContainer].Posicoes[i] = null;
+                }
+                Console.WriteLine($"Todos os itens foram removidos do container {numeroContainer}.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao remover itens do container {numeroContainer}: {ex.Message}");
             }
         }
     }
