@@ -4,7 +4,9 @@
 </h1>
 <p align="center">
       <img src="https://prospertechtalents.com/wp-content/uploads/2024/02/Prosper-Logo-Red.png" alt="Logo Prosper Tech Talents"> 
-       <img src="https://www.rdisoftware.com/img/logo.png" alt="Logo RDI"> 
+</center>
+<p align="center">
+    <img src="https://www.rdisoftware.com/img/logo.png" alt="Logo RDI"> 
 </center>
 
 ## Documentação do Programa: CodeRDIversity
