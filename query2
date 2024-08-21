@@ -1,0 +1,113 @@
+UPDATE `gb-projeto3dados.Projeto3.crimes-sp`
+SET latitude_longitude = CASE TRIM(Bairros_Regioes)
+    -- Campos Elísios
+    WHEN TRIM('Campos Elísios') THEN '[-23.546566, -46.633308]'
+    -- Brás
+    WHEN TRIM('Brás') THEN '[-23.532759, -46.621372]'
+    -- Carandiru
+    WHEN TRIM('Carandiru') THEN '[-23.525558, -46.626982]'
+    -- Ipiranga
+    WHEN TRIM('Ipiranga') THEN '[-23.583151, -46.605454]'
+    -- Alto da Moóca
+    WHEN TRIM('Alto da Moóca') THEN '[-23.568406, -46.616809]'
+    -- São Miguel Paulista
+    WHEN TRIM('São Miguel Paulista') THEN '[-23.502470, -46.549855]'
+    -- Ponte Rasa
+    WHEN TRIM('Ponte Rasa') THEN '[-23.528971, -46.556973]'
+    -- Parelheiros
+    WHEN TRIM('Parelheiros') THEN '[-23.712304, -46.597736]'
+    -- Sacomã
+    WHEN TRIM('Sacomã') THEN '[-23.606133, -46.605701]'
+    -- Vila Sonia
+    WHEN TRIM('Vila Sonia') THEN '[-23.616658, -46.737522]'
+    -- Campo Limpo
+    WHEN TRIM('Campo Limpo') THEN '[-23.646312, -46.743038]'
+    -- Vila Amália
+    WHEN TRIM('Vila Amália') THEN '[-23.510927, -46.626579]'
+    -- Vila Santa Maria
+    WHEN TRIM('Vila Santa Maria') THEN '[-23.531704, -46.593523]'
+    -- Vila Rica
+    WHEN TRIM('Vila Rica') THEN '[-23.548781, -46.633933]'
+    -- Parque São Lucas
+    WHEN TRIM('Parque São Lucas') THEN '[-23.582716, -46.546740]'
+    -- Vila Brasilândia
+    WHEN TRIM('Vila Brasilândia') THEN '[-23.451965, -46.657527]'
+    -- Perus
+    WHEN TRIM('Perus') THEN '[-23.477987, -46.742623]'
+    -- Parque São Jorge
+    WHEN TRIM('Parque São Jorge') THEN '[-23.538308, -46.600349]'
+    -- Parque do Carmo
+    WHEN TRIM('Parque do Carmo') THEN '[-23.575232, -46.475694]'
+    -- Parque São Rafael
+    WHEN TRIM('Parque São Rafael') THEN '[-23.609235, -46.548987]'
+    -- Parque da Moóca
+    WHEN TRIM('Parque da Moóca') THEN '[-23.550573, -46.598310]'
+    -- Jardim Noemia
+    WHEN TRIM('Jardim Noemia') THEN '[-23.572596, -46.639470]'
+    -- Cidade A E Carvalho
+    WHEN TRIM('Cidade A E Carvalho') THEN '[-23.572596, -46.639470]'
+    -- Artur Alvim
+    WHEN TRIM('Artur Alvim') THEN '[-23.537962, -46.556236]'
+    -- Vale do Aricanduva
+    WHEN TRIM('Vale do Aricanduva') THEN '[-23.550068, -46.555527]'
+    -- Jardim Robru
+    WHEN TRIM('Jardim Robru') THEN '[-23.523690, -46.611962]'
+    -- Lajeado
+    WHEN TRIM('Lajeado') THEN '[-23.526063, -46.568832]'
+    -- Teotônio Vilela
+    WHEN TRIM('Teotônio Vilela') THEN '[-23.541044, -46.597654]'
+    -- Vila Ema
+    WHEN TRIM('Vila Ema') THEN '[-23.562568, -46.637061]'
+    -- Jaraguá
+    WHEN TRIM('Jaraguá') THEN '[-23.477928, -46.747052]'
+    -- Jardim Arpoador
+    WHEN TRIM('Jardim Arpoador') THEN '[-23.569117, -46.665724]'
+    -- Santa Cecília
+    WHEN TRIM('Santa Cecília') THEN '[-23.537293, -46.640247]'
+    -- Parque Bristol
+    WHEN TRIM('Parque Bristol') THEN '[-23.593947, -46.620078]'
+    -- Vila Pereira Barreto
+    WHEN TRIM('Vila Pereira Barreto') THEN '[-23.517210, -46.579259]'
+    -- Portal do Morumbi
+    WHEN TRIM('Portal do Morumbi') THEN '[-23.569117, -46.665724]'
+    -- Parque Novo Mundo
+    WHEN TRIM('Parque Novo Mundo') THEN '[-23.485890, -46.603793]'
+    -- Ceagesp
+    WHEN TRIM('Ceagesp') THEN '[-23.541202, -46.683969]'
+    -- Parque Santo Antônio
+    WHEN TRIM('Parque Santo Antônio') THEN '[-23.570890, -46.641076]'
+    -- Monções
+    WHEN TRIM('Monções') THEN '[-23.537986, -46.612593]'
+    -- Americanópolis
+    WHEN TRIM('Americanópolis') THEN '[-23.580040, -46.614944]'
+    -- Jardim Míriam
+    WHEN TRIM('Jardim Míriam') THEN '[-23.570481, -46.616603]'
+    -- Jardim Herculano
+    WHEN TRIM('Jardim Herculano') THEN '[-23.593446, -46.626790]'
+    -- Jardim das Imbuias
+    WHEN TRIM('Jardim das Imbuias') THEN '[-23.590842, -46.608789]'
+    -- Cohab Itaquera
+    WHEN TRIM('Cohab Itaquera') THEN '[-23.550618, -46.495062]'
+    -- Centro
+    WHEN TRIM('Centro') THEN '[-23.550520, -46.633308]'
+    -- Sul
+    WHEN TRIM('Sul') THEN '[-23.621849, -46.688159]'
+    -- Oeste
+    WHEN TRIM('Oeste') THEN '[-23.550520, -46.633308]'
+    -- Norte
+    WHEN TRIM('Norte') THEN '[-23.550520, -46.633308]'
+    -- Leste
+    WHEN TRIM('Leste') THEN '[-23.550520, -46.633308]'
+    -- 8ª Seccional São Mateus
+    WHEN TRIM('8ª Seccional São Mateus') THEN '[-23.571883, -46.490299]'
+    -- Guarulhos (SP)
+    WHEN TRIM('Guarulhos (SP)') THEN '[-23.473226, -46.533308]'
+    -- Congonhas
+    WHEN TRIM('Congonhas') THEN '[-23.616056, -46.657042]'
+    -- CPS (SP)
+    WHEN TRIM('CPS (SP)') THEN '[-23.550520, -46.633308]'
+    -- 91 DP
+    WHEN TRIM('91 DP') THEN '[-23.550520, -46.633308]'
+    ELSE NULL
+END
+WHERE latitude_longitude is null;

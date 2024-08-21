@@ -574,6 +574,8 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
+zRascunhos
+
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
