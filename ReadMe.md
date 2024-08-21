@@ -46,10 +46,11 @@ Aqui você encontra os exemplos criados em aula pela instrutora
 [Terceiro Desafio](path)  
 
 ## 📄Tecnologias Utilizadas  
-- **VSCode**: Utilizado para criação das Soluções, Projetos e Códigos.  
 - **C#**: Linguagem criada pela Microsoft utilizada para criação e execução de programas.  
+- **VSCode**: Utilizado para criação das Soluções, Projetos e Códigos.  
+- **GIT**: Utilizado para o versionamento de código e documentação.  
 - **.NET**: Framework desenvolvido pela Microsoft com várias funcionalidades.  
-- **--**: .  
+- **Visual Studio**: IDE, mais performática que o VSCode para programas desenvolvidos em C#.  
 
 ## 📰 Referências e Materiais Extras:  
 ✴ Documentação do PostgreSQL.  
