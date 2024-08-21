@@ -11,7 +11,7 @@
 
 ## Documentação do Programa: CodeRDIversity
 
-🤖 ## Introdução
+## 🤖Introdução
 Este repositório possui os Exercícios e Projetos Desenvolvidos durante o programa.
 Para os projetos desenvolvidos nesse repositório foi utilizado a ferramente **VSCode**
 
