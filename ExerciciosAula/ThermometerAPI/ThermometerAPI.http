@@ -1,0 +1,6 @@
+@ThermometerAPI_HostAddress = http://localhost:5118
+
+GET {{ThermometerAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
