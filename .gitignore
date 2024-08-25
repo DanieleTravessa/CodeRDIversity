@@ -575,7 +575,10 @@ MigrationBackup/
 FodyWeavers.xsd
 
 zRascunhos
-
+query.*
+query2.*
+tst
+APIgeladeiraIOT
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
