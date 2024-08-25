@@ -7,15 +7,15 @@ namespace APIgeladeira.Models
 {
     public class Geladeira
     {
-        public List<Prateleira> Prateleiras { get; private set; }
+        public List<Prateleiras> Prateleiras { get; private set; }
 
         public Geladeira()
         {
-            Prateleiras = new List<Prateleira>
+            Prateleiras = new List<Prateleiras>
             {
-                new Prateleira("Hortifruti"),
-                new Prateleira("Laticínios"),
-                new Prateleira("Carnes, Charcutaria, Ovos")
+                new Prateleiras("Hortifruti"),
+                new Prateleiras("Laticínios"),
+                new Prateleiras("Carnes, Charcutaria, Ovos")
             };
         }
     }

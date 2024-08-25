@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 
 namespace APIgeladeira.Models
 {
-    public class Prateleira
+    public class Prateleiras
     {
-        public string Nome { get; private set; }
+        public string Prateleira { get; private set; }
         public List<Container> Containers { get; private set; }
 
-        public Prateleira(string nome)
+        public Prateleiras(string nome)
         {
-            Nome = nome;
+            Prateleira = nome;
             Containers = new List<Container>
             {
                 new Container(),
