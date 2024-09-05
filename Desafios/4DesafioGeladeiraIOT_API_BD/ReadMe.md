@@ -2,7 +2,7 @@
 
 <a id="documentacao"></a>
 <h1 align="center">
-    Programa CodeRDIversity - 3° Projeto<br>    
+    Programa CodeRDIversity - 4° Projeto<br>    
 </h1>
 <p align="center">
       <img src="https://prospertechtalents.com/wp-content/uploads/2024/02/Prosper-Logo-Red.png" alt="Logo Prosper Tech Talents"> 
@@ -64,18 +64,18 @@ Os resultados foram validados para garantir a precisão das análises. Esta etap
 ![alt text](\Imagens\image.png)
 
 **Get-Listar todos os itens**
-![alt text](image-1.png)
+![alt text](Desafios/4DesafioGeladeiraIOT_API_BD/Imagens/image-1.png)
 **Get-Listar um item específico**
-![alt text](\Imagens\image-2.png)
+![alt text](Desafios/4DesafioGeladeiraIOT_API_BD/Imagens/image-2.png)
 **Post-Inserir um item**
-![alt text](\Imagens\image-3.png)
+![alt text](/Imagens/image-3.png)
 **Retirar um item**
-![alt text](\Imagens\image-5.png)
-![alt text](\Imagens\image-6.png)
+![alt text](/Imagens/image-5.png)
+![alt text](/Imagens/image-6.png)
 
 ## ✴️Melhorias identificadas:
 1. Incluir Validação de posição e validação de categoria.
-![alt text](\Imagens\image-4.png)
+![alt text](/Imagens/image-4.png)
 2. Acessar o item pelo nome do produto.
 
 ## 📄Tecnologias Utilizadas  
