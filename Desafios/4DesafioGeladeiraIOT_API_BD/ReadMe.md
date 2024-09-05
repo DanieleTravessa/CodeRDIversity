@@ -76,7 +76,8 @@ Os resultados foram validados para garantir a precisão das análises. Esta etap
 ![alt text](/Desafios/4DesafioGeladeiraIOT_API_BD/Imagens/image-6.png)  
 
 ## ✴️Melhorias identificadas:
-1. Incluir Validação de posição e validação de categoria.  
+1. Incluir Validação de posição e validação de categoria.
+     
 ![alt text](/Desafios/4DesafioGeladeiraIOT_API_BD/Imagens/image-4.png)
 
 3. Acessar o item pelo nome do produto.
