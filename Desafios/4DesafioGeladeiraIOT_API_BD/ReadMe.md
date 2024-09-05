@@ -39,7 +39,7 @@ API para gerenciamento de itens de uma geladeira IOT, implementada com ASP.NET C
 
 ```json
 "ConnectionStrings": {
-    "DefaultConnection": "Server=SEU_SERVIDOR;Database=GeladeiraApiDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+    "DefaultConnection": "Server=SEU_SERVIDOR;Database=GeladeiraApiDB;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False"
     // "DefaultConnection": "Data Source=DESKTOP-JBG4ILK;Database=GeladeiraApiBD;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False"
 }
 ```
