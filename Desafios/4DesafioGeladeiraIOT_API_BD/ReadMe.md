@@ -60,7 +60,9 @@ dotnet watch run
 ### 🖱️ Validação dos Resultados  
 Os resultados foram validados para garantir a precisão das análises. Esta etapa incluiu a revisão das queries e a verificação dos dados de entrada.
 ### Retorno no Swagger  
+<p align="center"> 
 ![alt text](/Desafios/4DesafioGeladeiraIOT_API_BD/Imagens/image-7.png)  
+</center>
 ![alt text](/Desafios/4DesafioGeladeiraIOT_API_BD/Imagens/image.png)  
 
 **Get-Listar todos os itens**  
