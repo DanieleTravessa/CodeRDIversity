@@ -63,9 +63,8 @@ Os resultados foram validados para garantir a precisão das análises. Esta etap
 ![alt text](/Desafios/4DesafioGeladeiraIOT_API_BD/Imagens/image-7.png)
 ![alt text](/Desafios/4DesafioGeladeiraIOT_API_BD/Imagens/image.png)  
 
-**Get-Listar todos os itens**  
+**Get-Listar todos os itens**                  ---              **Get-Listar um item específico** 
 ![alt text](/Desafios/4DesafioGeladeiraIOT_API_BD/Imagens/image-1.png)
-**Get-Listar um item específico**  
 ![alt text](/Desafios/4DesafioGeladeiraIOT_API_BD/Imagens/image-2.png)  
 
 **Post-Inserir um item**  
