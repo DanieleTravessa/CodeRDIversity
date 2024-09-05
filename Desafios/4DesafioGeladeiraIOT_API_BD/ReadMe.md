@@ -64,7 +64,7 @@ Os resultados foram validados para garantir a precisão das análises. Esta etap
 ![alt text](\Imagens\image.png)
 
 **Get-Listar todos os itens**
-![alt text](\Imagens\image-1.png)
+![alt text](image-1.png)
 **Get-Listar um item específico**
 ![alt text](\Imagens\image-2.png)
 **Post-Inserir um item**
@@ -73,7 +73,7 @@ Os resultados foram validados para garantir a precisão das análises. Esta etap
 ![alt text](\Imagens\image-5.png)
 ![alt text](\Imagens\image-6.png)
 
-## Melhorias identificadas:
+## ✴️Melhorias identificadas:
 1. Incluir Validação de posição e validação de categoria.
 ![alt text](\Imagens\image-4.png)
 2. Acessar o item pelo nome do produto.
