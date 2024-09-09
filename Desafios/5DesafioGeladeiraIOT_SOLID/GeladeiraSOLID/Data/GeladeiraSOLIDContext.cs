@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using GeladeiraSOLID.Models;
 using Microsoft.EntityFrameworkCore;
+using GeladeiraSOLID.Models;
 
 namespace GeladeiraSOLID.Data
 {
