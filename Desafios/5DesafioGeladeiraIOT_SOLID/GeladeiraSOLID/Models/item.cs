@@ -16,7 +16,7 @@ namespace GeladeiraSOLID.Models
 
         public DateTime Validade { get; set; }
         
-        public bool Valido { get; set; } 
+        
 
         [Range(1, 3, ErrorMessage = "A prateleira deve ser um valor entre 1 e 3.")]
         public int Prateleira { get; set; }

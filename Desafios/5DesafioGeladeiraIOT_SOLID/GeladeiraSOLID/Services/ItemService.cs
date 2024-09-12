@@ -18,6 +18,7 @@ namespace GeladeiraSOLID.Services
 
         public async Task<IEnumerable<Item>> GetAllItemsAsync()
         {
+            IEnumerable.
             var items = await _itemRepository.GetAllAsync();
             foreach (var item in items)
             {
