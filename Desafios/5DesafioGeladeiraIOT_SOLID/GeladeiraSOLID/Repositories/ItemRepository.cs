@@ -30,6 +30,20 @@ namespace GeladeiraSOLID.Repositories
             return existedItem;
         }
 
+        public async Task<Item> GetByNameAsync(string name)
+        {
+            var item = await _context.Items.FirstOrDefaultAsync(i => i.Nome == name);
+            if (item is null)
+                return null;
+            return item;
+        }
+
+        public async Task<Item> GetByCombinationAsync(int prateleira, int container, int posicao)
+        {
+            return await _context.Items
+                .FirstOrDefaultAsync(i => i.Prateleira == prateleira && i.Container == container && i.Posicao == posicao);
+        }
+
         public async Task AddAsync(Item item)
         {
             await _context.Items.AddAsync(item);
@@ -51,6 +65,5 @@ namespace GeladeiraSOLID.Repositories
                 await _context.SaveChangesAsync();
             }
         }
-
     }
 }

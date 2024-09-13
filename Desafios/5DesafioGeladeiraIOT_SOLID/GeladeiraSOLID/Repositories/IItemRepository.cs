@@ -11,8 +11,10 @@ namespace GeladeiraSOLID.Repositories
     {
        Task<IEnumerable<Item>> GetAllAsync();
        Task<Item> GetByIdAsync(int id);
+       Task<Item> GetByNameAsync(string name);
        Task AddAsync(Item item);
        Task UpdateAsync(Item item);
        Task DeleteAsync(int id);
+       Task<Item> GetByCombinationAsync(int prateleira, int container, int posicao);
     }
 }

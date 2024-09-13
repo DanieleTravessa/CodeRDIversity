@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using GeladeiraSOLID.Models;
 
 namespace GeladeiraSOLID.Services
@@ -10,6 +6,8 @@ namespace GeladeiraSOLID.Services
     {
         Task<IEnumerable<Item>> GetAllItemsAsync();
         Task<Item> GetItemByIdAsync(int id);
+        Task<Item> GetItemByNameAsync(string name);
+        Task<IEnumerable<Item>> GetExpiredItems();
         Task AddItemAsync(Item item);
         Task UpdateItemAsync(Item item);
         Task DeleteItemAsync(int id);
