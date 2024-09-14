@@ -14,11 +14,11 @@
 # GeladeiraSOLID
 
 ## 🤖Introdução
-Este repositório possui os Projetos relacionado à quinta semana durante o programa.
+Este repositório possui o Projeto relacionado à quinta semana durante o programa.
 Para os projetos desenvolvidos nesse repositório foi utilizado a ferramente **VSCode**.
 
 ## 🚀Proposta do desafio:
-### 🖱️  Criar uma API conectada a um  Banco de Dados
+### 🖱️  Criar uma API conectada a um  Banco de Dados baseado nos princípios de SOLID
 Este projeto implementa uma API RESTful para gerenciar uma geladeira inteligente seguindo os princípios de SOLID, implementada com ASP.NET Core Web API, Entity Framework Core e SQL Server. A aplicação permite adicionar, remover e buscar itens armazenados nas prateleiras e containers da geladeira, garantindo a unicidade de combinações de prateleira, container e posição.
 
 ## 🖱️Configuração do Ambiente
