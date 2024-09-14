@@ -11,7 +11,7 @@
     <img src="https://www.rdisoftware.com/img/logo.png" alt="Logo RDI"> 
 </center>
 
-# GeladeiraAPI
+# GeladeiraSOLID
 
 ## 🤖Introdução
 Este repositório possui os Projetos relacionado à quinta semana durante o programa.
