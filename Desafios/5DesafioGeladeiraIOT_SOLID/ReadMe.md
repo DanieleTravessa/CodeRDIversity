@@ -65,8 +65,8 @@ O projeto segue uma estrutura de camadas para facilitar a manutenção e evoluç
 
 ```json
 "ConnectionStrings": {
-    "DefaultConnection": "Server=SEU_SERVIDOR;Database=GeladeiraApiDB;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False"
-    // "DefaultConnection": "Data Source=DESKTOP-JBG4ILK;Database=GeladeiraApiBD;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False"
+    "DefaultConnection": "Server=SEU_SERVIDOR;Database=GeladeiraSOLID;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False"
+    // "DefaultConnection": "Data Source=DESKTOP-JBG4ILK;Database=GeladeiraSOLID;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False"
 }
 ```
 <!--
