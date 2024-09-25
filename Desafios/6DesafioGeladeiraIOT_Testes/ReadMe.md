@@ -11,7 +11,7 @@
     <img src="https://www.rdisoftware.com/img/logo.png" alt="Logo RDI"> 
 </center>
 
-# GeladeiraAPI
+# GeladeiraTestes
 
 ## 🤖Introdução
 Este repositório possui os Projetos relacionado à sexta semana durante o programa.
