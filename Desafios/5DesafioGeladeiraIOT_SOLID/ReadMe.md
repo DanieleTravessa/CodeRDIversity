@@ -2,7 +2,7 @@
 
 <a id="documentacao"></a>
 <h1 align="center">
-    Programa CodeRDIversity - 4° Projeto<br>    
+    Programa CodeRDIversity - 5° Projeto<br>    
 </h1>
 <p align="center">
       <img src="https://prospertechtalents.com/wp-content/uploads/2024/02/Prosper-Logo-Red.png" alt="Logo Prosper Tech Talents"> 
@@ -11,14 +11,14 @@
     <img src="https://www.rdisoftware.com/img/logo.png" alt="Logo RDI"> 
 </center>
 
-# GeladeiraAPI
+# GeladeiraSOLID
 
 ## 🤖Introdução
-Este repositório possui os Projetos relacionado à quinta semana durante o programa.
+Este repositório possui o Projeto relacionado à quinta semana durante o programa.
 Para os projetos desenvolvidos nesse repositório foi utilizado a ferramente **VSCode**.
 
 ## 🚀Proposta do desafio:
-### 🖱️  Criar uma API conectada a um  Banco de Dados
+### 🖱️  Criar uma API conectada a um  Banco de Dados baseado nos princípios de SOLID
 Este projeto implementa uma API RESTful para gerenciar uma geladeira inteligente seguindo os princípios de SOLID, implementada com ASP.NET Core Web API, Entity Framework Core e SQL Server. A aplicação permite adicionar, remover e buscar itens armazenados nas prateleiras e containers da geladeira, garantindo a unicidade de combinações de prateleira, container e posição.
 
 ## 🖱️Configuração do Ambiente
@@ -65,8 +65,8 @@ O projeto segue uma estrutura de camadas para facilitar a manutenção e evoluç
 
 ```json
 "ConnectionStrings": {
-    "DefaultConnection": "Server=SEU_SERVIDOR;Database=GeladeiraApiDB;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False"
-    // "DefaultConnection": "Data Source=DESKTOP-JBG4ILK;Database=GeladeiraApiBD;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False"
+    "DefaultConnection": "Server=SEU_SERVIDOR;Database=GeladeiraSOLID;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False"
+    // "DefaultConnection": "Data Source=DESKTOP-JBG4ILK;Database=GeladeiraSOLID;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False"
 }
 ```
 <!--
