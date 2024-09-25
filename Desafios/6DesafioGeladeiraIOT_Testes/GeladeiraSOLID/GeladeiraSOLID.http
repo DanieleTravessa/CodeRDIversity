@@ -1,0 +1,6 @@
+@GeladeiraSOLID_HostAddress = http://localhost:5182
+
+GET {{GeladeiraSOLID_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
