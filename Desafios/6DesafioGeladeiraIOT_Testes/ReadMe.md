@@ -132,7 +132,7 @@ Exemplo de resultado obtido:
 ✴ Orientações das aulas.  
 
 ## 📄Conclusão
-Este desafio buscou promover o aprendizado da implantação de uma API, além da prática da liguagem C# e do framework .NET. 
+Este desafio buscou promover o aprendizado da implantação de testes unitários, além da prática da liguagem C# e do framework .NET. 
 Se você está interessado em contribuir ou aprender mais sobre o assunto, sinta-se à vontade para contribuir! 🚀  
 
 ## 💌Como Contribuir:  
